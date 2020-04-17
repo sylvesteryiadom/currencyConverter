@@ -39,7 +39,7 @@ async function convertCurrency(fromCurrency, toCurrency, amount) {
     return `${amount} ${fromCurrency} is worth ${convertedAmount} ${toCurrency}. You can spend these in the following countries: ${countries}`;
 }
 
-convertCurrency('USDDD', 'EUR', 30)
+convertCurrency('USD', 'CAD', 30)
     .then(results => {
         console.log(results);
     })
